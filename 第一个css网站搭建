@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+
+<body>
+    <article>
+        <section class="wrraper center">
+            <h1>SHOP BEST SELLERS WITH PROVEN RESULTS
+            </h1>
+        </section>
+        <div class="arrow">
+
+        </div>
+        <div class="makeup1"></div>
+        <div class="makeup2"></div>
+        <div class="makeup3"></div>
+        <div class="makeup4"></div>
+        <h4 class="position1">VETYVER HAND WASH
+            <br>
+            Repairs, Strengthens, And Protects Hair.
+        </h4>
+        <h4 class="position2">BALANCING TONER
+            <br>
+            Repairs, Strengthens, And Protects Hair,
+        </h4>
+        <h4 class="position3">WELL KEPT SHAVE OIL <br>
+            Repairs, Srngthens, And proteti-
+        </h4>
+        <h4 class="position4">BEAUTY: PERFUME + FRAGRANCES <br> Repairs, Strengthens, And Protects Hair.
+        </h4>
+        <div class="div1">
+
+            <img src="./starfill.png" alt="starfill">
+            <img src="./starfill.png" alt="starfill">
+            <img src="./starfill.png" alt="starfill">
+            <img src="./starfill.png" alt="starfill">
+            <img src="./starfill.png" alt="starfill">
+            <span>213Reviews</span>
+            <br>
+            <h4 class="c">€45</h4><br>
+            <button class="b">ADD TO BAG</button>
+        </div>
+        <div class="div2">
+
+            <img src="./starfill.png" alt="starfill">
+            <img src="./starfill.png" alt="starfill">
+            <img src="./starfill.png" alt="starfill">
+            <img src="./starfill.png" alt="starfill">
+            <img src="./starfill.png" alt="starfill">
+            <span>213Reviews</span>
+            <br>
+            <h4 class="c">€42</h4><br>
+            <button class="b">ADD TO BAG</button>
+        </div>
+        <div class="div3">
+
+            <img src="./starfill.png" alt="starfill">
+            <img src="./starfill.png" alt="starfill">
+            <img src="./starfill.png" alt="starfill">
+            <img src="./starfill.png" alt="starfill">
+            <img src="./starfill.png" alt="starfill">
+            <span>213Reviews</span>
+            <br>
+            <h4 class="c">€40</h4><br>
+            <button class="b">ADD TO BAG</button>
+        </div>
+        <div class="div4">
+
+            <img src="./starfill.png" alt="starfill">
+            <img src="./starfill.png" alt="starfill">
+            <img src="./starfill.png" alt="starfill">
+            <img src="./starfill.png" alt="starfill">
+            <img src="./starfill.png" alt="starfill">
+            <span>213Reviews</span>
+            <br>
+            <h4 class="a">€59</h4><br>
+            <button class="b">ADD TO BAG</button>
+        </div>
+</body>
+
+</html>
