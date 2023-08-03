@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            position: relative;
+            width: 534px;
+            height: 441px;
+            background-color: #000;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+
+        .item1 {
+            width: 200px;
+            height: 105px;
+            border: 4px solid #000;
+            border-radius: 90px 90px 0 0;
+            background-color: #ffd020;
+            left: 50%;
+            top: 44px;
+            transform: translateX(-50%);
+            position: absolute;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .item2 {
+            width: 360px;
+            height: 21px;
+            border: 4px solid #000;
+            border-radius: 50px;
+            background-color: #ffd020;
+            left: 50%;
+            top: 147px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 1;
+        }
+
+        .bar-red {
+            width: 210px;
+            height: 38px;
+            border: 4px solid #000;
+            background-color: #f00;
+            left: 50%;
+            top: 71px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 1;
+        }
+
+        .item3 {
+            width: 205px;
+            height: 105px;
+            border: 4px solid #000;
+            border-radius: 100px 100px 0 0;
+            background-color: #fff;
+            left: 50%;
+            top: 167px;
+            transform: translateX(-50%) rotate(180deg);
+            position: absolute;
+        }
+
+        .item4 {
+            width: 52px;
+            height: 51px;
+            border-radius: 50%;
+            background-color: #000;
+            left: 203px;
+            top: 180px;
+            position: absolute;
+        }
+
+        .item5 {
+            width: 52px;
+            height: 51px;
+            border-radius: 50%;
+            background-color: #000;
+            left: 283px;
+            top: 180px;
+            position: absolute;
+        }
+
+        .item6 {
+            width: 29px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #000;
+            left: 253px;
+            top: 237px;
+            position: absolute;
+        }
+
+        .item7 {
+            width: 133px;
+            height: 136px;
+            border: 4px solid #000;
+            border-radius: 61px;
+            background-color: #fff;
+            left: 50%;
+            top: 218px;
+            transform: translateX(-50%);
+            position: absolute;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .tooth-big1 {
+            width: 40px;
+            height: 27px;
+            border: 4px solid #000;
+            /* border-radius: 0 0 10px 0 ; */
+            background-color: #fff;
+            left: -3px;
+            top: 37px;
+            transform: rotate(20deg);
+            position: absolute;
+            z-index: 1;
+        }
+
+        .tooth-big2 {
+            width: 42px;
+            height: 28px;
+            border: 4px solid #000;
+            border-radius: 0 0 5px 5px;
+            background-color: #fff;
+            left: 27px;
+            top: 42px;
+            transform: rotate(5deg);
+            position: absolute;
+            z-index: 2;
+        }
+
+        .tooth-big3 {
+            width: 40px;
+            height: 27px;
+            border: 4px solid #000;
+            border-radius: 0 0 5px 5px;
+            background-color: #fff;
+            left: 62px;
+            top: 43px;
+            transform: rotate(-3deg);
+            position: absolute;
+            z-index: 2;
+        }
+
+        .tooth-big4 {
+            width: 47px;
+            height: 26px;
+            border: 4px solid #000;
+            border-radius: 0 0 5px 5px;
+            background-color: #fff;
+            right: -6px;
+            top: 35px;
+            transform: rotate(-30deg);
+            position: absolute;
+        }
+
+        .tooth-big5 {
+            width: 44px;
+            height: 27px;
+            border: 4px solid #000;
+            /* border-radius: 0 0 10px 0 ; */
+            background-color: #fff;
+            left: -14px;
+            top: 62px;
+            transform: rotate(13deg);
+            position: absolute;
+
+        }
+
+        .tooth-big6 {
+            width: 43px;
+            height: 28px;
+            border: 4px solid #000;
+            border-radius: 0 0 5px 5px;
+            background-color: #fff;
+            left: 25px;
+            top: 65px;
+            transform: rotate(4deg);
+            position: absolute;
+            z-index: 1;
+        }
+
+        .tooth-big7 {
+            width: 41px;
+            height: 27px;
+            border: 4px solid #000;
+            border-radius: 0 0 5px 5px;
+            background-color: #fff;
+            left: 63px;
+            top: 65px;
+            transform: rotate(-5deg);
+            position: absolute;
+            z-index: 1;
+        }
+
+        .tooth-big8 {
+            width: 47px;
+            height: 26px;
+            border: 4px solid #000;
+            border-radius: 0 0 5px 5px;
+            background-color: #fff;
+            right: -13px;
+            top: 62px;
+            transform: rotate(-25deg);
+            position: absolute;
+        }
+
+        .mouth {
+            width: 128px;
+            height: 40px;
+            top: 50px;
+            background-color: #000;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .bone1 {
+            width: 342px;
+            height: 37px;
+            position: absolute;
+            border: 4px solid #000;
+            background-color: #fff;
+            left: 47%;
+           top: 184px;
+            transform: translateX(-50%) rotate(45deg);
+            z-index: -2;
+        }
+        .bone2 {
+            width: 345px;
+            height: 37px;
+            position: absolute;
+            border: 4px solid #000;
+            background-color: #fff;
+            left: 53%;
+           top: 181px;
+            transform: translateX(-50%) rotate(-45deg);
+            z-index: -2;
+        }
+        .arthrosis1{
+            width: 41px;
+            height: 37px;
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50%;
+            transform: rotate(-30deg);
+            top: 28%;
+            left: -9%;
+            z-index: -2;
+        }
+        .arthrosis2{
+            width: 41px;
+            height: 37px;
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50%;
+            transform: rotate(30deg);
+            top: -78%;
+            left: -9%;
+            z-index: -2;
+        }
+        .arthrosis3{
+            width: 41px;
+            height: 37px;
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50%;
+            transform: rotate(30deg);
+            top: 28%;
+            right: -9%;
+            z-index: -2;
+        }
+        .arthrosis4{
+            width: 41px;
+            height: 37px;
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50%;
+            transform: rotate(-30deg);
+            top: -78%;
+            right: -9%;
+            z-index: -2;
+        }
+        .arthrosis5{
+            width: 41px;
+            height: 37px;
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50%;
+            transform: rotate(-30deg);
+            top: 28%;
+            left: -9%;
+            z-index: -2;
+        }
+        .arthrosis6{
+            width: 41px;
+            height: 37px;
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50%;
+            transform: rotate(30deg);
+            top: -78%;
+            left: -9%;
+            z-index: -2;
+        }
+        .arthrosis7{
+            width: 41px;
+            height: 37px;
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50%;
+            transform: rotate(30deg);
+            top: 28%;
+            right: -9%;
+            z-index: -2;
+        }
+        .arthrosis8{
+            width: 41px;
+            height: 37px;
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50%;
+            transform: rotate(-30deg);
+            top: -78%;
+            right: -9%;
+            z-index: -2;
+        }
+        .cap-black1{
+            position: absolute;
+            width: 35px;
+            height: 4px;
+            background-color: #000;
+            left: 5%;
+            top: 43px;
+            transform: rotate(-60deg);
+        }
+        .cap-black2{
+            position: absolute;
+            width: 22px;
+            height: 4px;
+            background-color: #000;
+            left: 16%;
+            top: 46px;
+            transform: rotate(-65deg);
+        }
+        .cap-black3{
+            position: absolute;
+            width: 14px;
+            height: 4px;
+            background-color: #000;
+            left: 26%;
+            top: 48px;
+            transform: rotate(-70deg);
+        }
+        .cap-black4{
+            position: absolute;
+            width: 15px;
+            height: 4px;
+            background-color: #000;
+            right: 13%;
+            top: 50px;
+            transform: rotate(60deg);
+        }
+        .cap-black5{
+            position: absolute;
+            width: 22px;
+            height: 4px;
+            background-color: #000;
+            right: 4%;
+            top: 48px;
+            transform: rotate(65deg);
+        }
+#Mouth-cavity{
+    animation: trans-break 0.5s linear infinite;
+    cursor: pointer;
+    
+}
+
+@keyframes trans-break{
+    0% {
+                transform: translateY(0%)  ;
+            }
+
+            10% {
+                transform: translateY(70%);
+            }
+
+            30% {
+                transform: translateY(20%);
+            }
+
+            40% {
+                transform: translateY(70%);
+            }
+            68% {
+                transform: translateY(20%);
+            }
+            
+            75% {
+                transform: translateY(70%);
+            }
+            85% {
+                transform: translateY(20%);
+            }
+            95% {
+                transform: translateY(70%);
+            }
+            100% {
+                transform: translateY(0%);
+            }
+}
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- 中部 -->
+        <div class="item1 ">
+            <span class="bar-red"></span>
+            <nav class="cap-black1"></nav>
+            <nav class="cap-black2"></nav>
+            <nav class="cap-black3"></nav>
+            <nav class="cap-black4"></nav>
+            <nav class="cap-black5"></nav>
+        </div>
+        <div class="item2 "></div>
+        <div class="item3 "></div>
+        <div class="item4 "></div>
+        <div class="item5"></div>
+        <div class="item6"></div>
+        <div class="item7">
+            <span class="tooth-big1"></span>
+            <span class="tooth-big2"></span>
+            <span class="tooth-big3"></span>
+            <span class="tooth-big4"></span>
+            
+            <span class="tooth-big5" id="Mouth-cavity"></span>
+            <span class="tooth-big6" id="Mouth-cavity"></span>
+            <span class="tooth-big7" id="Mouth-cavity"></span>
+            <span class="tooth-big8" id="Mouth-cavity"></span>
+        
+            <span class="mouth"></span>
+        </div>
+        <div class="item8"></div>
+        <div class="bone1">
+            <span class="arthrosis1"></span>
+            <span class="arthrosis2"></span>
+            <span class="arthrosis3"></span>
+            <span class="arthrosis4"></span>
+            
+        </div>
+        <div class="bone2">
+            <span class="arthrosis5"></span>
+            <span class="arthrosis6"></span>
+            <span class="arthrosis7"></span>
+            <span class="arthrosis8"></span>
+        </div>
+    </main>
+</body>
+
+</html>
